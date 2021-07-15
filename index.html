@@ -12,15 +12,39 @@
         <input type="number" id="val2" placeholder="Enter a number">
         <input type="number" id="result" placeholder="">
         <button onclick="minus()">-</button>
+        <button onclick="multiplication()">*</button>
+        <button onclick="division()">/</button>
     </fieldset>
     <script>
-    function minus(){
+        // subtraction
+    function minus()
+    {
         if(val1.value!=="" && val2.value!=="")
         {
             result.value=val1.value-val2.value
         }
         else{alert("You need to enter a number")}
     }
+        // multiplication
+    function multiplication()
+        {
+            if(val1.value!=="" && val2.value!=="")
+            {
+                result.value=val1.value*val2.value
+            }
+            else{
+                alert("You need to enter a number")
+            }
+        }
+        // division
+        function division()
+        {
+            if(val1.value!=="" && val2.value!=="")
+            {
+                result.value=val1.value/val2.value
+            }
+            else{alert("You need to enter a number")}
+        }
     </script>
 </body>
 </html>
