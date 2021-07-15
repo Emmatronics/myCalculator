@@ -7,13 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    <fieldset>
-        <input type="number" id="val1" placeholder="Enter a number">
-        <input type="number" id="val2" placeholder="Enter a number">
-        <input type="number" id="result" placeholder="">
-        <button onclick="minus()">-</button>
-        <button onclick="multiplication()">*</button>
-        <button onclick="division()">/</button>
+    <fieldset style="border: solid thick rgb(236, 117, 117); width: 30%;height: 65vh;padding: 30px;border-radius: 5px;background-image: linear-gradient(#c2c79bf5,rgba(172, 125, 125, 0.548));justify-content: center;">
+        <legend style="text-align: center;font-size: 24px;color: crimson;"><b>TWO VALUE CALCULATOR</b></legend>
+        <input type="number" id="result" placeholder="" style="background-color: rgb(43, 40, 40);width: 100%;height: 20vh;font-size: 90px; color: blanchedalmond;text-align: end;border-radius: 20px;">
+        
+        <section style="display: flex;justify-content: space-between;">
+             <div style="margin-top: 20px;">
+                 <label for="val1">First Value</label><br>
+                 <input type="number" id="val1" placeholder="Enter a number" style="width: 150px;height: 10vh;font-size: 20px;text-align: center;"> <br>
+             </div>
+             <div style="margin-top: 20px;">
+                 <label for="val2">Second Value</label><br>
+                 <input type="number" id="val2" placeholder="Enter a number" style="width: 150px;height: 10vh; font-size: 20px;text-align: center;">
+             </div>
+        </section><br>
+            <div style="width: 300px;height: 10vh; background-color: rgb(84, 84, 116);border-radius: 10px;display: flex; justify-content: center;justify-content: space-evenly;margin-left: 40px;">
+                   <button onclick="minus()" style="width: 40px;height: 40px; margin-top: 15px;font-size: 20px;"><b>-</b></button>
+                   <button onclick="multiplication()" style="width: 40px;height: 40px;margin-top: 15px;font-size: 20px;"><b>*</b></button>
+                   <button onclick="division()" style="width: 40px;height: 40px;margin-top: 15px;font-size: 20px;"><b>/</b></button>
+             </div>
     </fieldset>
     <script>
         // subtraction
